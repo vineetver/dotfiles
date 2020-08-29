@@ -1,0 +1,65 @@
+! special
+! URxvt Appearance
+#define FONT SFMono-Regular
+#define FONT_SIZE 11
+Xcursor.size: 8
+Xcursor.theme: Alkano-Aluminium
+
+*.color0: #000000
+*.color1: #850504
+*.color2: #159916
+*.color3: #878915
+*.color4: #0B00A3
+*.color5: #A000A3
+*.color6: #1396A3
+*.color7: #B2B2B2
+*.color8: #5C5C5C
+*.color9: #DC0A09
+*.color10: #1CD61F
+*.color11: #E0E323
+*.color12: #1100FA
+*.color13: #DC00DF
+*.color14: #1DE2DF
+*.color15: #DFDFDF
+*.color66: #101212
+
+URxvt.font: xft:FONT:style=Regular:size=FONT_SIZE,xft:IPAGothic:size=11
+URxvt.boldFont: xft:FONT:style=Bold:size=FONT_SIZE,xft:IPAGothic:size=11
+URxvt.italicFont: xft:FONT:style=Italic:size=FONT_SIZE
+URxvt.boldItalicFont: xft:FONT:style=Bold Italic:size=FONT_SIZE
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+! URxvt.geometry: 92x24
+URxvt.geometry: 75x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.iso14755: false
+URxvt.transparent: false
+
+
+
+!! Common Keybinds for Navigations
+URxvt.keysym.M-k: command:\033]720;1\007
+URxvt.keysym.M-j: command:\033]721;1\007
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: ...,keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
+URxvt.perl-lib: /usr/lib/x86_64-linux-gnu/urxvt/perl
+
+
+
+URxvt.foreground: [100]#FFFFFF
+URxvt*depth: 32
+URxvt*background: [93]#08090A
+
