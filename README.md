@@ -1,0 +1,3 @@
+# dotfiles
+
+For Linux only
